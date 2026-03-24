@@ -30,14 +30,14 @@ img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit;transition:color var(--t)}
 ul,ol{list-style:none}
 .container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 16px}
-.section{padding:24px 0}
+.section{padding:24px 16px;max-width:var(--max-w);margin:0 auto}
 .section-gray{background:var(--light-gray)}
-.section-red{background:var(--red);color:var(--white)}
+.section-red{background:var(--red);color:var(--white);max-width:var(--max-w);margin:0 auto;border-radius:var(--r)}
 .mono{font-family:var(--mono)}
 
 /* ========== 顶部信息栏 ========== */
 .top-bar{background:var(--dark);font-size:12px;color:rgba(255,255,255,.7);line-height:30px}
-.top-bar-inner{display:flex;justify-content:space-between;align-items:center}
+.top-bar-inner{display:flex;justify-content:space-between;align-items:center;max-width:var(--max-w);margin:0 auto;padding:0 16px}
 
 /* ========== Logo + 导航合并栏 ========== */
 .header-bar{background:var(--white);padding:0;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:1000;box-shadow:0 1px 6px rgba(0,0,0,.08)}
@@ -70,7 +70,7 @@ ul,ol{list-style:none}
 .qs-icon{font-size:22px;line-height:1}
 
 /* ========== 信任条 ========== */
-.trust-bar{background:var(--white);border-bottom:1px solid var(--border);padding:10px 0}
+.trust-bar{background:var(--white);border:1px solid var(--border);padding:10px 16px;max-width:var(--max-w);margin:0 auto;border-radius:var(--r)}
 .trust-bar-inner{display:flex;align-items:center;justify-content:center;gap:0}
 .trust-item{font-size:13px;color:var(--text-light);padding:0 20px;text-align:center}
 .trust-item strong{color:var(--red);font-size:14px}
@@ -115,7 +115,7 @@ ul,ol{list-style:none}
 .btn-sm{padding:6px 18px;font-size:12px}
 
 /* ========== CTA 条 ========== */
-.cta-section{padding:14px 0}
+.cta-section{padding:14px 0;max-width:var(--max-w);margin:0 auto;border-radius:var(--r)}
 .cta-inner{display:flex;align-items:center;justify-content:space-between}
 .cta-text{font-size:14px;font-weight:500}
 .cta-right{display:flex;align-items:center;gap:16px}
@@ -126,7 +126,7 @@ ul,ol{list-style:none}
 .fab-booking:hover{padding-right:16px;background:var(--red-hover)}
 
 /* ========== Footer 精简 ========== */
-.footer{background:var(--dark);color:rgba(255,255,255,.7);padding:0}
+.footer{background:var(--dark);color:rgba(255,255,255,.7);padding:0;max-width:var(--max-w);margin:16px auto 0;border-radius:var(--r) var(--r) 0 0}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1)}
 .footer-left{font-size:13px}
 .footer-left strong{color:#fff}
