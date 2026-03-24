@@ -52,22 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Banner 轮播 ---------- */
   const slides = document.querySelectorAll('.banner-slide');
-  const dots = document.querySelectorAll('.banner-dot');
   if (slides.length > 1) {
     let current = 0;
     const go = (idx) => {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = idx % slides.length;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
+      const next = idx % slides.length;
+      slides[next].classList.add('active');
+      setTimeout(() => {
+        slides[current].classList.remove('active');
+        current = next;
+      }, 50);
     };
-    let timer = setInterval(() => go(current + 1), 4000);
-    dots.forEach(d => d.addEventListener('click', () => {
-      clearInterval(timer);
-      go(+d.dataset.index);
-      timer = setInterval(() => go(current + 1), 4000);
-    }));
+    setInterval(() => go(current + 1), 4000);
   }
 
   /* ---------- 表单模拟提交 ---------- */
