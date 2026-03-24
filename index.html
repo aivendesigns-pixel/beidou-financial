@@ -9,20 +9,34 @@
 </head>
 <body>
 
-<!-- ========== 导航栏 ========== -->
-<nav class="navbar">
-  <div class="container">
+<!-- ========== 顶部信息栏 ========== -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <span class="top-bar-left">FINTRAC 持牌 · MSB Registration: M23913954</span>
+    <span class="top-bar-right">服务热线：+1 647-395-6918 ｜ beidoufinancial@gmail.com</span>
+  </div>
+</div>
+
+<!-- ========== Logo 栏 ========== -->
+<div class="header-bar">
+  <div class="container header-bar-inner">
     <a href="index.html" class="nav-logo">
       <img src="logo.png" alt="北斗金融 Beidou Financial">
     </a>
+    <div class="header-slogan">安心换汇，决胜全球</div>
+  </div>
+</div>
+
+<!-- ========== 红色导航栏 ========== -->
+<nav class="navbar">
+  <div class="container">
     <div class="nav-links">
       <a href="index.html" class="active">首页</a>
-      <a href="services.html">我们的服务</a>
+      <a href="services.html">外汇兑换</a>
+      <a href="services.html">企业结售汇</a>
+      <a href="services.html">跨境汇款</a>
       <a href="about.html">关于我们</a>
       <a href="contact.html">联系我们</a>
-    </div>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary btn-sm">立即预约</a>
     </div>
     <div class="nav-toggle">
       <span></span><span></span><span></span>
@@ -33,258 +47,241 @@
 <!-- ========== 悬浮预约按钮 ========== -->
 <a href="contact.html" class="fab-booking">立即预约</a>
 
-<!-- ========== 区块 1：主视觉横幅 Hero ========== -->
-<section class="hero">
-  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80')"></div>
-  <div class="hero-glow"></div>
-  <div class="container">
-    <div class="hero-content fade-up">
-      <span class="hero-tag">FINTRAC 持牌 · 合法合规</span>
-      <h1>安心换汇，决胜全球</h1>
-      <p class="hero-sub">安全 · 专业 · 优惠 · 便捷</p>
-      <p class="hero-desc">为大多伦多地区的个人与企业客户提供专业外汇兑换及跨境金融服务</p>
-      <div class="hero-buttons">
+<!-- ========== 横幅 Banner ========== -->
+<section class="banner">
+  <div class="banner-bg" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80')"></div>
+  <div class="container banner-inner">
+    <div class="banner-text">
+      <span class="banner-tag">FINTRAC 持牌 · 合法合规</span>
+      <h1>安心换汇<br>决胜全球</h1>
+      <p>为大多伦多地区的个人与企业客户<br>提供专业外汇兑换及跨境金融服务</p>
+      <div class="banner-buttons">
         <a href="services.html" class="btn btn-primary">了解我们的服务</a>
-        <a href="contact.html" class="btn btn-outline">立即预约</a>
+        <a href="contact.html" class="btn btn-outline-white">立即预约</a>
       </div>
     </div>
+    <div class="banner-sidebar">
+      <h4>快捷服务</h4>
+      <a href="services.html" class="sidebar-link">个人换汇预约</a>
+      <a href="services.html" class="sidebar-link">企业结售汇咨询</a>
+      <a href="services.html" class="sidebar-link">跨境汇款服务</a>
+      <a href="contact.html" class="sidebar-link">联系专属顾问</a>
+      <a href="about.html" class="sidebar-link">查看公司资质</a>
+    </div>
   </div>
-  <div class="hero-bottom-fade"></div>
 </section>
 
-<!-- ========== 区块 2：实时汇率 ========== -->
-<section class="section section-rates" id="rates">
+<!-- ========== 便捷服务图标行 ========== -->
+<section class="quick-services">
   <div class="container">
-    <div class="section-header fade-up">
-      <h2>今日实时汇率</h2>
-      <p>以下汇率实时更新，仅供参考，实际汇率以交易时为准</p>
-    </div>
-    <!-- 卡片式汇率展示（Wix Repeater 可复刻） -->
-    <div class="rate-grid fade-up">
-      <div class="rate-card">
-        <div class="rate-flag">🇺🇸</div>
-        <div class="rate-pair-name">USD / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">7.2456</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">7.2512</div></div>
-        </div>
-        <span class="rate-change rate-up">▲ +0.12%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇭🇰</div>
-        <div class="rate-pair-name">HKD / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">0.9273</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">0.9301</div></div>
-        </div>
-        <span class="rate-change rate-up">▲ +0.05%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇪🇺</div>
-        <div class="rate-pair-name">EUR / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">7.8934</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">7.9021</div></div>
-        </div>
-        <span class="rate-change rate-down">▼ -0.08%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇬🇧</div>
-        <div class="rate-pair-name">GBP / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">9.1823</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">9.1945</div></div>
-        </div>
-        <span class="rate-change rate-up">▲ +0.15%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇯🇵</div>
-        <div class="rate-pair-name">JPY / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">0.0485</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">0.0488</div></div>
-        </div>
-        <span class="rate-change rate-down">▼ -0.22%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇨🇦</div>
-        <div class="rate-pair-name">CAD / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">5.2847</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">5.2923</div></div>
-        </div>
-        <span class="rate-change rate-up">▲ +0.09%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇦🇺</div>
-        <div class="rate-pair-name">AUD / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">4.7126</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">4.7198</div></div>
-        </div>
-        <span class="rate-change rate-down">▼ -0.11%</span>
-      </div>
-      <div class="rate-card">
-        <div class="rate-flag">🇨🇭</div>
-        <div class="rate-pair-name">CHF / CNY</div>
-        <div class="rate-buy-sell">
-          <div class="rate-col"><div class="rate-col-label">买入</div><div class="rate-col-val">8.1234</div></div>
-          <div class="rate-col"><div class="rate-col-label">卖出</div><div class="rate-col-val">8.1356</div></div>
-        </div>
-        <span class="rate-change rate-up">▲ +0.07%</span>
-      </div>
-    </div>
-    <div class="rate-meta fade-up">
-      <p>数据每30秒自动更新 · 最后更新：2025年3月22日 14:30</p>
-      <a href="#" class="link-red" style="margin-top:8px;display:inline-flex;">查看完整汇率 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    <div class="qs-grid">
+      <a href="services.html" class="qs-item">
+        <div class="qs-icon">💱</div>
+        <span>个人换汇</span>
+      </a>
+      <a href="services.html" class="qs-item">
+        <div class="qs-icon">🏢</div>
+        <span>企业结汇</span>
+      </a>
+      <a href="services.html" class="qs-item">
+        <div class="qs-icon">🌍</div>
+        <span>跨境汇款</span>
+      </a>
+      <a href="contact.html" class="qs-item">
+        <div class="qs-icon">📞</div>
+        <span>预约咨询</span>
+      </a>
+      <a href="#rates" class="qs-item">
+        <div class="qs-icon">📊</div>
+        <span>实时汇率</span>
+      </a>
+      <a href="about.html" class="qs-item">
+        <div class="qs-icon">🛡️</div>
+        <span>资质认证</span>
+      </a>
+      <a href="about.html" class="qs-item">
+        <div class="qs-icon">👥</div>
+        <span>关于我们</span>
+      </a>
+      <a href="contact.html" class="qs-item">
+        <div class="qs-icon">📍</div>
+        <span>门店地址</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ========== 区块 3：金融资讯 ========== -->
+<!-- ========== 主体内容：汇率 + 资讯 两栏 ========== -->
+<section class="section" id="rates">
+  <div class="container">
+    <div class="portal-grid">
+
+      <!-- 左栏：实时汇率 -->
+      <div class="portal-main">
+        <div class="portal-section-header">
+          <h3>今日实时汇率</h3>
+          <a href="#" class="more-link">更多 &gt;</a>
+        </div>
+        <div class="rate-table">
+          <div class="rate-table-head">
+            <span>币种</span><span>买入</span><span>卖出</span><span>涨跌</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇺🇸 USD/CNY</span><span class="mono">7.2456</span><span class="mono">7.2512</span><span class="rate-up mono">+0.12%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇭🇰 HKD/CNY</span><span class="mono">0.9273</span><span class="mono">0.9301</span><span class="rate-up mono">+0.05%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇪🇺 EUR/CNY</span><span class="mono">7.8934</span><span class="mono">7.9021</span><span class="rate-down mono">-0.08%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇬🇧 GBP/CNY</span><span class="mono">9.1823</span><span class="mono">9.1945</span><span class="rate-up mono">+0.15%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇨🇦 CAD/CNY</span><span class="mono">5.2847</span><span class="mono">5.2923</span><span class="rate-up mono">+0.09%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇯🇵 JPY/CNY</span><span class="mono">0.0485</span><span class="mono">0.0488</span><span class="rate-down mono">-0.22%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇦🇺 AUD/CNY</span><span class="mono">4.7126</span><span class="mono">4.7198</span><span class="rate-down mono">-0.11%</span>
+          </div>
+          <div class="rate-table-row">
+            <span>🇨🇭 CHF/CNY</span><span class="mono">8.1234</span><span class="mono">8.1356</span><span class="rate-up mono">+0.07%</span>
+          </div>
+        </div>
+        <p class="rate-note">数据每30秒自动更新 · 最后更新：2025年3月22日 14:30 · 实际汇率以交易时为准</p>
+      </div>
+
+      <!-- 右栏：资讯 + 公告 -->
+      <div class="portal-side">
+        <div class="portal-section-header">
+          <h3>最新资讯</h3>
+          <a href="#" class="more-link">更多 &gt;</a>
+        </div>
+        <ul class="news-list">
+          <li><a href="#">· 美联储维持利率不变，人民币汇率小幅走强</a></li>
+          <li><a href="#">· 加拿大央行发布最新货币政策报告，关注通胀走势</a></li>
+          <li><a href="#">· 大多伦多地区华人换汇需求持续增长</a></li>
+          <li><a href="#">· 2025年跨境汇款政策解读：企业须知</a></li>
+          <li><a href="#">· 人民币国际化进程加速，海外换汇更便利</a></li>
+        </ul>
+
+        <div class="portal-section-header" style="margin-top:32px;">
+          <h3>服务公告</h3>
+        </div>
+        <ul class="news-list">
+          <li><a href="#">· 北斗金融大额换汇优惠汇率活动进行中</a></li>
+          <li><a href="#">· 企业客户专属顾问服务全面升级</a></li>
+          <li><a href="#">· 营业时间：周一至周五 10:00-17:00</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== 我们的服务 ========== -->
 <section class="section section-gray">
   <div class="container">
-    <div class="section-header fade-up">
-      <h2>最新金融资讯</h2>
-      <p>掌握市场动态，做出明智的换汇决策</p>
-    </div>
-    <div class="news-grid">
-      <div class="news-card fade-up">
-        <img class="news-card-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="外汇市场">
-        <div class="news-card-body">
-          <span class="news-tag">外汇市场</span>
-          <h3>美联储维持利率不变，人民币汇率小幅走强</h3>
-          <p>美联储最新利率决议维持现有利率水平不变，符合市场预期。受此影响，人民币兑美元汇率在离岸市场小幅走强。</p>
-          <span class="news-source">新浪财经 · 2小时前</span>
-        </div>
-      </div>
-      <div class="news-card fade-up">
-        <img class="news-card-img" src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&q=80" alt="宏观经济">
-        <div class="news-card-body">
-          <span class="news-tag">宏观经济</span>
-          <h3>加拿大央行发布最新货币政策报告，关注通胀走势</h3>
-          <p>加拿大央行发布季度货币政策报告，指出通胀压力有所缓和，暗示未来利率调整空间，加元汇率承压。</p>
-          <span class="news-source">路透社 · 5小时前</span>
-        </div>
-      </div>
-      <div class="news-card fade-up">
-        <img class="news-card-img" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80" alt="行业动态">
-        <div class="news-card-body">
-          <span class="news-tag">行业动态</span>
-          <h3>大多伦多地区华人换汇需求持续增长</h3>
-          <p>随着跨境贸易与留学需求增加，大多伦多地区的外汇兑换服务需求持续增长，专业持牌机构优势凸显。</p>
-          <span class="news-source">加西周末 · 1天前</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 区块 4：服务简介 ========== -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>我们的服务</h2>
-      <p>一站式外汇金融服务，专业团队为您保驾护航</p>
+    <div class="portal-section-header center">
+      <h3>我们的服务</h3>
     </div>
     <div class="service-cards">
-      <div class="service-card fade-up">
+      <div class="service-card">
         <div class="service-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12"/><path d="M15.5 9.4c-.3-1.2-1.5-2.1-3-2.1-1.7 0-3.1 1-3.1 2.3 0 1.3 1.4 2.3 3.1 2.3 1.7 0 3.1 1 3.1 2.3 0 1.3-1.4 2.3-3.1 2.3-1.5 0-2.7-.9-3-2.1"/></svg>
         </div>
         <h3>个人外汇兑换</h3>
         <p>人民币及主要货币快速兑换，汇率透明，手续简便</p>
-        <a href="services.html" class="link-red">了解详情 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="services.html" class="link-red">了解详情 &gt;</a>
       </div>
-      <div class="service-card fade-up">
+      <div class="service-card">
         <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M2 11h20"/><path d="M12 17v-2"/><path d="M8 17v-2"/><path d="M16 17v-2"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M2 11h20"/></svg>
         </div>
         <h3>企业结售汇</h3>
         <p>为企业提供专业的结汇、售汇及外汇风险管理方案</p>
-        <a href="services.html" class="link-red">了解详情 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="services.html" class="link-red">了解详情 &gt;</a>
       </div>
-      <div class="service-card fade-up">
+      <div class="service-card">
         <div class="service-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v4"/><path d="M7 3v4"/><path d="m15 13-3 3-3-3"/><path d="M12 16V8"/><path d="M3 7h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
         </div>
         <h3>跨境汇款</h3>
         <p>安全快速的跨境资金转账，支持全球主流银行</p>
-        <a href="services.html" class="link-red">了解详情 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="services.html" class="link-red">了解详情 &gt;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== 区块 5：公司亮点 ========== -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>为什么选择北斗金融</h2>
-    </div>
-    <div class="highlights fade-up">
-      <div class="highlight-item">
-        <div class="highlight-num">2019</div>
-        <div class="highlight-label">年成立，深耕大多伦多地区</div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-num">前银行</div>
-        <div class="highlight-label">人士组成的专业顾问团队</div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-num">FINTRAC</div>
-        <div class="highlight-label">持牌合规，受加拿大监管机构监督</div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-num">13家</div>
-        <div class="highlight-label">全球主流银行合作伙伴</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 区块 6：信任背书 ========== -->
+<!-- ========== 为什么选择我们 + 资质 两栏 ========== -->
 <section class="section">
   <div class="container">
-    <div class="section-header fade-up">
-      <h2>资质认证与合作机构</h2>
-    </div>
-    <div class="cert-badges fade-up">
-      <div class="cert-badge">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        <span>FINTRAC 持牌机构</span>
+    <div class="portal-grid">
+      <div class="portal-main">
+        <div class="portal-section-header">
+          <h3>为什么选择北斗金融</h3>
+        </div>
+        <div class="highlights-list">
+          <div class="hl-item">
+            <div class="hl-num">2019</div>
+            <div class="hl-text"><strong>年成立</strong>，深耕大多伦多地区外汇服务</div>
+          </div>
+          <div class="hl-item">
+            <div class="hl-num">前银行</div>
+            <div class="hl-text"><strong>专业人士</strong>组成的顾问团队</div>
+          </div>
+          <div class="hl-item">
+            <div class="hl-num">FINTRAC</div>
+            <div class="hl-text"><strong>持牌合规</strong>，受加拿大监管机构监督</div>
+          </div>
+          <div class="hl-item">
+            <div class="hl-num">13家</div>
+            <div class="hl-text"><strong>全球主流银行</strong>合作伙伴</div>
+          </div>
+        </div>
       </div>
-      <div class="cert-badge">
-        <svg class="shield-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-        <span>Bank of Canada 注册备案</span>
+      <div class="portal-side">
+        <div class="portal-section-header">
+          <h3>资质认证</h3>
+        </div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-icon">✅</span>
+            <div>
+              <strong>FINTRAC MSB 持牌</strong>
+              <p>注册编号：M23913954</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">🏛️</span>
+            <div>
+              <strong>Bank of Canada 注册备案</strong>
+              <p>符合加拿大货币服务监管要求</p>
+            </div>
+          </div>
+        </div>
+        <div class="portal-section-header" style="margin-top:24px;">
+          <h3>合作银行</h3>
+        </div>
+        <div class="partner-tags">
+          <span>RBC</span><span>TD</span><span>BMO</span><span>Scotiabank</span><span>CIBC</span><span>HSBC</span><span>Citi</span><span>J.P. Morgan</span>
+        </div>
       </div>
-    </div>
-    <div class="partner-grid fade-up">
-      <div class="partner-item">RBC</div>
-      <div class="partner-item">TD</div>
-      <div class="partner-item">BMO</div>
-      <div class="partner-item">Scotiabank</div>
-      <div class="partner-item">CIBC</div>
-      <div class="partner-item">Citi</div>
-      <div class="partner-item">Wells Fargo</div>
-      <div class="partner-item">Bank of America</div>
-      <div class="partner-item">CTBC Bank</div>
-      <div class="partner-item">J.P. Morgan</div>
-      <div class="partner-item">Standard Chartered</div>
-      <div class="partner-item">DBS Bank</div>
-      <div class="partner-item">HSBC</div>
     </div>
   </div>
 </section>
 
-<!-- ========== 区块 7：客户好评 ========== -->
+<!-- ========== 客户好评 ========== -->
 <section class="section section-gray">
   <div class="container">
-    <div class="section-header fade-up">
-      <h2>客户好评</h2>
-      <p>真实客户反馈，值得信赖的服务品质</p>
+    <div class="portal-section-header center">
+      <h3>客户好评</h3>
     </div>
-    <div class="testimonial-grid fade-up">
+    <div class="testimonial-grid">
       <div class="testimonial-card">
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">北斗金融的汇率非常有竞争力，比银行划算很多。服务态度也非常好，每次换汇都很愉快。强烈推荐给大多伦多地区需要换汇的朋友！</p>
@@ -322,7 +319,7 @@
   </div>
 </section>
 
-<!-- ========== 区块 9：CTA ========== -->
+<!-- ========== CTA ========== -->
 <section class="section section-red cta-section">
   <div class="container">
     <div class="cta-left">
