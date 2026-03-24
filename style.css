@@ -241,6 +241,29 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .cert-badge{display:flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(184,134,11,.06);border:1px solid rgba(184,134,11,.2);border-radius:var(--r);font-weight:600;font-size:13px}
 .cert-badge svg{color:var(--gold);width:20px;height:20px}
 
+/* ========== 服务简介行 ========== */
+.section-white{background:var(--white)}
+.service-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc-card{padding:20px;border:1px solid var(--border);border-radius:var(--r);background:var(--white);border-top:3px solid var(--red)}
+.svc-card:hover{box-shadow:var(--shadow)}
+.svc-icon{font-size:28px;margin-bottom:10px}
+.svc-card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--text)}
+.svc-card p{font-size:12px;color:var(--text-light);line-height:1.7;margin-bottom:10px}
+
+/* ========== 办理流程 ========== */
+.process-row{display:flex;align-items:flex-start;justify-content:center;gap:0}
+.process-step{flex:1;text-align:center;padding:0 16px}
+.process-num{width:36px;height:36px;background:var(--red);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;margin:0 auto 10px}
+.process-step h4{font-size:14px;font-weight:700;margin-bottom:4px;color:var(--text)}
+.process-step p{font-size:11px;color:var(--text-light);line-height:1.5}
+.process-arrow{font-size:20px;color:var(--gray);display:flex;align-items:center;padding-top:8px;flex-shrink:0}
+
+/* ========== 紧凑联系信息 ========== */
+.contact-compact{display:flex;flex-direction:column;gap:10px}
+.cc-item{font-size:13px;color:var(--text);display:flex;gap:8px;align-items:baseline}
+.cc-label{font-size:11px;color:var(--gray);width:32px;flex-shrink:0}
+.cc-item strong{font-weight:600}
+
 /* 旧导航兼容（子页面） */
 .navbar{background:var(--red);display:none}
 .nav-toggle{display:none}
