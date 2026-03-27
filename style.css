@@ -288,6 +288,38 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 /* ========== 服务卡片标签 ========== */
 .svc-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
 
+/* ========== 关于页门户风格 ========== */
+.about-portal-intro{margin-bottom:14px}
+.about-portal-intro p{font-size:13px;color:var(--text-light);line-height:1.7;margin-bottom:8px}
+.about-portal-intro p:last-child{margin-bottom:0}
+.about-img-banner{height:180px;border-radius:var(--r);overflow:hidden;margin-top:12px}
+.about-img-banner img{width:100%;height:100%;object-fit:cover;background:var(--light-gray)}
+
+.cert-compact{display:flex;flex-direction:column;gap:10px}
+.cert-compact-item{padding:12px;background:var(--light-gray);border-radius:var(--r);border-left:3px solid var(--gold)}
+.cert-compact-item h4{font-size:13px;font-weight:700;margin-bottom:2px}
+.cert-compact-item p{font-size:11px;color:var(--text-light);margin:0;line-height:1.5}
+
+.about-values-compact{display:flex;flex-direction:column;gap:8px}
+.about-val-item{display:flex;align-items:flex-start;gap:10px;padding:8px 10px;background:var(--light-gray);border-radius:var(--r)}
+.about-val-item svg{color:var(--gold);flex-shrink:0;margin-top:1px}
+.about-val-item div{display:flex;flex-direction:column}
+.about-val-item strong{font-size:12px;font-weight:700}
+.about-val-item span{font-size:11px;color:var(--text-light)}
+
+.timeline-compact{display:flex;flex-direction:column;gap:0}
+.tc-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed #eee;align-items:baseline}
+.tc-item:last-child{border-bottom:none}
+.tc-year{font-size:12px;font-weight:700;color:var(--red);font-family:var(--mono);flex-shrink:0;min-width:40px}
+.tc-text{font-size:13px;color:var(--text-light)}
+
+.honor-compact-list{display:flex;flex-direction:column;gap:10px}
+.honor-compact-item{display:flex;gap:10px;padding:10px 12px;background:var(--light-gray);border-radius:var(--r)}
+.honor-compact-icon{width:32px;height:32px;background:rgba(184,134,11,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)}
+.honor-compact-icon svg{width:16px;height:16px}
+.honor-compact-item strong{font-size:12px;font-weight:700;display:block;margin-bottom:2px}
+.honor-compact-item p{font-size:11px;color:var(--text-light);margin:0;line-height:1.5}
+
 /* 旧导航兼容（子页面） */
 .navbar{background:var(--red);display:none}
 .nav-toggle{display:none}
