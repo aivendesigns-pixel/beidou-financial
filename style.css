@@ -267,6 +267,15 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .cc-label{font-size:11px;color:var(--gray);width:32px;flex-shrink:0}
 .cc-item strong{font-weight:600}
 
+/* ========== 详细办理流程（服务页） ========== */
+.flow-steps{display:flex;flex-direction:column;gap:14px;margin-bottom:16px}
+.flow-step{padding:14px 16px;background:var(--light-gray);border-radius:var(--r);border-left:3px solid var(--red)}
+.flow-step-head{font-size:13px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.flow-step-head .step-num{width:22px;height:22px;flex-shrink:0}
+.flow-detail{margin:0;padding-left:34px;list-style:disc}
+.flow-detail li{font-size:12px;color:var(--text-light);line-height:1.6;margin-bottom:3px}
+.flow-detail li:last-child{margin-bottom:0}
+
 /* 旧导航兼容（子页面） */
 .navbar{background:var(--red);display:none}
 .nav-toggle{display:none}
