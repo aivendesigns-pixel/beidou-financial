@@ -249,7 +249,8 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .service-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .svc-card{padding:20px;border:1px solid var(--border);border-radius:var(--r);background:var(--white);border-top:3px solid var(--red)}
 .svc-card:hover{box-shadow:var(--shadow)}
-.svc-icon{font-size:28px;margin-bottom:10px}
+.svc-icon{width:36px;height:36px;color:var(--red);margin-bottom:10px}
+.svc-icon svg{width:100%;height:100%}
 .svc-card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--text)}
 .svc-card p{font-size:12px;color:var(--text-light);line-height:1.7;margin-bottom:10px}
 
@@ -281,7 +282,8 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .biz-features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .biz-feature{text-align:center;padding:20px 14px;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
 .biz-feature:hover{border-color:var(--red);box-shadow:var(--shadow)}
-.biz-feature-icon{font-size:28px;margin-bottom:8px}
+.biz-feature-icon{width:32px;height:32px;color:var(--red);margin:0 auto 8px}
+.biz-feature-icon svg{width:100%;height:100%}
 .biz-feature h4{font-size:14px;font-weight:700;margin-bottom:6px;color:var(--text)}
 .biz-feature p{font-size:11px;color:var(--text-light);line-height:1.6}
 
