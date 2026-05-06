@@ -324,3 +324,43 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .navbar{background:var(--red);display:none}
 .nav-toggle{display:none}
 .header-slogan{display:none}
+
+/* ============================================
+   招聘页 Careers — 极简深色 Hero
+   ============================================ */
+.careers-hero{background:#0A0A0A;min-height:70vh;display:flex;align-items:center;justify-content:center;color:#fff;position:relative;overflow:hidden}
+.careers-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(196,18,48,.10) 0%,rgba(10,10,10,0) 60%);pointer-events:none}
+.careers-hero-inner{position:relative;z-index:1;display:flex;justify-content:center}
+.careers-hero-content{max-width:760px;text-align:center;padding:80px 16px}
+.careers-title{font-size:48px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:18px;letter-spacing:1px}
+.careers-subtitle{font-size:20px;font-weight:400;color:rgba(255,255,255,.72);margin-bottom:28px;line-height:1.5}
+.careers-desc{font-size:14px;color:rgba(255,255,255,.55);line-height:1.8;max-width:560px;margin:0 auto 40px}
+.careers-email{margin-bottom:36px}
+.careers-email-link{display:inline-block;font-size:28px;font-weight:600;color:#fff;font-family:var(--mono);letter-spacing:.5px;padding-bottom:6px;border-bottom:3px solid var(--red);transition:color var(--t),transform var(--t)}
+.careers-email-link:hover{color:var(--red);transform:translateY(-1px)}
+.btn-careers{padding:13px 44px;font-size:14px;letter-spacing:2px;box-shadow:0 6px 20px rgba(196,18,48,.35)}
+.btn-careers:hover{box-shadow:0 8px 24px rgba(196,18,48,.5);transform:translateY(-1px)}
+
+/* 招聘页淡入上移动画（自动播放，按顺序延迟） */
+.careers-hero .fade-up{opacity:0;transform:translateY(24px);animation:careersFadeUp .8s ease forwards}
+.careers-title.fade-up{animation-delay:.1s}
+.careers-subtitle.fade-up{animation-delay:.25s}
+.careers-desc.fade-up{animation-delay:.4s}
+.careers-email.fade-up{animation-delay:.55s}
+.careers-cta.fade-up{animation-delay:.7s}
+@keyframes careersFadeUp{to{opacity:1;transform:translateY(0)}}
+
+/* 响应式：移动端 */
+@media (max-width:768px){
+  body{min-width:0}
+  .careers-hero-content{padding:60px 20px}
+  .careers-title{font-size:32px;letter-spacing:.5px}
+  .careers-subtitle{font-size:16px;margin-bottom:20px}
+  .careers-desc{font-size:13px;margin-bottom:28px}
+  .careers-email-link{font-size:18px;word-break:break-all}
+  .btn-careers{padding:12px 32px;font-size:13px}
+}
+@media (max-width:375px){
+  .careers-title{font-size:28px}
+  .careers-email-link{font-size:16px}
+}
